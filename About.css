@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f9fb;
+  color: #333;
+}
+
+header {
+  background: #0a0a23;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00bcd4;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00bcd4;
+}
+
+.about-hero {
+  position: relative;
+  background: url(img/about.jpg) 
+              no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 70px;
+  z-index: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 35, 0.75);
+  z-index: -1;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero-content span {
+  color: #00bcd4;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #f0f0f0;
+}
+
+.company-overview {
+  text-align: center;
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.company-overview h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0a0a23;
+}
+
+.company-overview p {
+  line-height: 1.7;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.mission-vision {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.mission-vision .card {
+  background: white;
+  flex: 1;
+  min-width: 280px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.mission-vision .card:hover {
+  transform: translateY(-10px);
+}
+
+.mission-vision img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.mission-vision h3 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.mission-vision p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.leadership {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.leadership h2 {
+  font-size: 32px;
+  color: #0a0a23;
+  margin-bottom: 40px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.member {
+  background-color: #f9fafc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 10px 20px rgba(0, 188, 212, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 188, 212, 0.2);
+}
+
+.member img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.member h4 {
+  margin-top: 15px;
+  color: #00bcd4;
+  font-size: 18px;
+}
+
+.member p {
+  font-size: 14px;
+  color: #555;
+}
+
+footer {
+  background-color: #0a0a23;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .mission-vision {
+    flex-direction: column;
+  }
+  .member {
+    width: 90%;
+  }
+}
